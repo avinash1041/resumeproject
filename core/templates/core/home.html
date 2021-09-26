@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+  {% block title %}  <title>Home</title>  {% endblock title %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+            <img src="{% static 'core/images/1.jpg' %}" alt="profilepic" class="img-thumbnail"
+         width="250px" height="250px">
+    </div>
+    <div class="mt-2 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;"> I am <b class="text-warning">Avinash Jadhav</b> having 3 year of full-stack web
+                development experience for global businessess, I offere the technicle expertise you are seeking for your web
+                developer position.</p>
+            <p>Since earning my bachelor's degree in Computer science from Z.B.Patil collage Dhule, I have served as a web
+                developer at <b class="text-warning"> I.P. Infotech</b>, one beggest premieer digital marketing and web
+                development firm. In this position , I have led of web development projects for clients in deverse industries
+                including technology, manufacturing, pharmaceuticle, hospital, retail and financial services.</p>
+            <p>I am using verious technology of web developement like- frontend-Angular, HTML,css,bootstrap,javascript,ajax,jquery,
+                backend- core python and web framework - Django and flask, and database- Mysql,sqllite3,mongodb, etc.
+                I am creating of various websites in Django.</p>
+        </div>
+    </div>
+    <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-8">Hire Me</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+{% endblock content %}
